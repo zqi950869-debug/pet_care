@@ -1,5 +1,44 @@
 ﻿import styles from './page.module.css';
 
+const testimonials = [
+  {
+    quote: '我家狗子以前进洗护店就发抖，这次居然愿意跟美容师贴贴。洗完蓬松到像刚出炉的小面包。',
+    owner: 'Lucky 家长',
+    pet: '柯基 · 3 岁',
+    tag: '敏感犬安抚',
+  },
+  {
+    quote: '猫咪分区很加分，洗前还会问敏感点，回家没有应激。指甲剪得也很圆滑。',
+    owner: '年糕家长',
+    pet: '布偶猫 · 2 岁',
+    tag: '猫咪分区洗护',
+  },
+  {
+    quote: '美容师会边洗边发照片，吹毛时还特意避开耳朵。接回家以后香味很清爽，不会冲鼻。',
+    owner: '豆包家长',
+    pet: '柴犬 · 4 岁',
+    tag: '过程透明',
+  },
+  {
+    quote: '第一次做造型就剪到了我想要的圆脸效果，细节很干净，脚底毛和肚皮也修得很仔细。',
+    owner: 'Momo 家长',
+    pet: '比熊 · 1 岁',
+    tag: '精修造型',
+  },
+  {
+    quote: '老年犬站久了会累，店里给它垫了防滑垫，中途还安排休息。护理完精神状态很好。',
+    owner: '可乐家长',
+    pet: '金毛 · 9 岁',
+    tag: '老年犬友好',
+  },
+  {
+    quote: '临时加了接送服务，沟通很顺。到店前后都会确认皮肤情况，护理建议也写得很清楚。',
+    owner: '芝麻家长',
+    pet: '英短 · 5 岁',
+    tag: '接送到店',
+  },
+];
+
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -269,15 +308,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid reviews" aria-label="顾客评价">
-        <article className="quote">
-          <p>“我家狗子以前进洗护店就发抖，这次居然愿意跟美容师贴贴。洗完蓬松到像刚出炉的小面包。”</p>
-          <span>Lucky 家长 · 柯基 · 3 岁</span>
-        </article>
-        <article className="quote">
-          <p>“猫咪分区很加分，洗前还会问敏感点，回家没有应激。指甲剪得也很圆滑。”</p>
-          <span>年糕家长 · 布偶猫 · 2 岁</span>
-        </article>
+      <section className="reviews" aria-labelledby="reviews-title">
+        <div className="section-heading compact">
+          <span className="eyebrow"><span className="dot"></span>真实到店反馈</span>
+          <h2 id="reviews-title">让家长放心的，不只是洗得香。</h2>
+          <p>从胆小敏感到精修造型，每一只小朋友都会被认真记录、温柔照顾。</p>
+        </div>
+        <div className="reviews-carousel" aria-label="顾客评价轮播">
+          <div className="reviews-track">
+            {[...testimonials, ...testimonials].map((review, index) => (
+              <article className="quote" key={`${review.owner}-${index}`} aria-hidden={index >= testimonials.length}>
+                <div className="quote-top">
+                  <span className="quote-tag">{review.tag}</span>
+                  <span className="stars" aria-label="五星评价">★★★★★</span>
+                </div>
+                <p>“{review.quote}”</p>
+                <div className="quote-author">
+                  <strong>{review.owner}</strong>
+                  <span>{review.pet}</span>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section id="contact" className="contact" aria-labelledby="contact-title">

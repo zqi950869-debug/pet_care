@@ -727,29 +727,119 @@
     }
 
     .reviews {
-      grid-template-columns: 1.1fr 0.9fr;
+      overflow: hidden;
+    }
+
+    .section-heading.compact {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .section-heading.compact h2 {
+      margin: 14px 0 12px;
+      color: var(--sage);
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+    }
+
+    .section-heading.compact p {
+      margin: 0;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .reviews-carousel {
+      position: relative;
+      margin-inline: -18px;
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    }
+
+    .reviews-track {
+      display: flex;
+      width: max-content;
+      gap: 18px;
+      animation: reviewsMarquee 36s linear infinite;
+      will-change: transform;
+    }
+
+    .reviews-carousel:hover .reviews-track {
+      animation-play-state: paused;
     }
 
     .quote {
-      padding: 34px;
+      display: flex;
+      flex: 0 0 clamp(300px, 34vw, 430px);
+      min-height: 310px;
+      padding: 28px;
+      flex-direction: column;
+      justify-content: space-between;
       border-radius: var(--radius-lg);
-      background: rgba(255, 255, 255, 0.72);
+      background: rgba(255, 255, 255, 0.78);
       border: 1px solid var(--line);
       box-shadow: var(--shadow);
     }
 
-    .quote p {
-      margin: 0 0 20px;
-      font-size: clamp(24px, 3vw, 36px);
-      line-height: 1.22;
+    .quote-top,
+    .quote-author {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .quote-tag {
+      width: fit-content;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(49, 95, 77, 0.1);
       color: var(--sage);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .stars {
+      color: #d6941f;
+      font-size: 14px;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .quote p {
+      margin: 26px 0;
+      font-size: clamp(21px, 2.4vw, 30px);
+      line-height: 1.3;
+      color: #0b2f5b;
       letter-spacing: -0.03em;
       font-weight: 900;
     }
 
-    .quote span {
+    .quote-author {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .quote-author strong {
+      color: var(--ink);
+      font-size: 16px;
+    }
+
+    .quote-author span {
       color: var(--muted);
       font-weight: 700;
+    }
+
+    .reviews .quote:nth-of-type(3n + 2) p {
+      color: #8a6500;
+    }
+
+    .reviews .quote:nth-of-type(3n) p {
+      color: #315f4d;
     }
 
     .contact {
@@ -1022,6 +1112,16 @@
       }
     }
 
+    @keyframes reviewsMarquee {
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+
+      to {
+        transform: translate3d(calc(-50% - 9px), 0, 0);
+      }
+    }
+
     @keyframes fadeCarousel {
       0%,
       30% {
@@ -1109,6 +1209,33 @@
       .section-head {
         align-items: flex-start;
         flex-direction: column;
+      }
+
+      .section-heading.compact {
+        margin-bottom: 22px;
+      }
+
+      .reviews-carousel {
+        margin-inline: -14px;
+        -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+        mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+      }
+
+      .reviews-track {
+        gap: 14px;
+        animation-duration: 42s;
+      }
+
+      .quote {
+        flex-basis: min(82vw, 340px);
+        min-height: 300px;
+        padding: 24px;
+      }
+
+      .quote-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
       }
 
       .pet-card {
@@ -1393,15 +1520,148 @@
         </div>
       </section>
 
-      <section class="grid reviews" aria-label="顾客评价">
-        <article class="quote">
-          <p>“我家狗子以前进洗护店就发抖，这次居然愿意跟美容师贴贴。洗完蓬松到像刚出炉的小面包。”</p>
-          <span>Lucky 家长 · 柯基 · 3 岁</span>
-        </article>
-        <article class="quote">
-          <p>“猫咪分区很加分，洗前还会问敏感点，回家没有应激。指甲剪得也很圆滑。”</p>
-          <span>年糕家长 · 布偶猫 · 2 岁</span>
-        </article>
+      <section class="reviews" aria-labelledby="reviews-title">
+        <div class="section-heading compact">
+          <span class="eyebrow"><span class="dot"></span>真实到店反馈</span>
+          <h2 id="reviews-title">让家长放心的，不只是洗得香。</h2>
+          <p>从胆小敏感到精修造型，每一只小朋友都会被认真记录、温柔照顾。</p>
+        </div>
+        <div class="reviews-carousel" aria-label="顾客评价轮播">
+          <div class="reviews-track">
+            <article class="quote">
+              <div class="quote-top">
+                <span class="quote-tag">敏感犬安抚</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“我家狗子以前进洗护店就发抖，这次居然愿意跟美容师贴贴。洗完蓬松到像刚出炉的小面包。”</p>
+              <div class="quote-author">
+                <strong>Lucky 家长</strong>
+                <span>柯基 · 3 岁</span>
+              </div>
+            </article>
+            <article class="quote">
+              <div class="quote-top">
+                <span class="quote-tag">猫咪分区洗护</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“猫咪分区很加分，洗前还会问敏感点，回家没有应激。指甲剪得也很圆滑。”</p>
+              <div class="quote-author">
+                <strong>年糕家长</strong>
+                <span>布偶猫 · 2 岁</span>
+              </div>
+            </article>
+            <article class="quote">
+              <div class="quote-top">
+                <span class="quote-tag">过程透明</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“美容师会边洗边发照片，吹毛时还特意避开耳朵。接回家以后香味很清爽，不会冲鼻。”</p>
+              <div class="quote-author">
+                <strong>豆包家长</strong>
+                <span>柴犬 · 4 岁</span>
+              </div>
+            </article>
+            <article class="quote">
+              <div class="quote-top">
+                <span class="quote-tag">精修造型</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“第一次做造型就剪到了我想要的圆脸效果，细节很干净，脚底毛和肚皮也修得很仔细。”</p>
+              <div class="quote-author">
+                <strong>Momo 家长</strong>
+                <span>比熊 · 1 岁</span>
+              </div>
+            </article>
+            <article class="quote">
+              <div class="quote-top">
+                <span class="quote-tag">老年犬友好</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“老年犬站久了会累，店里给它垫了防滑垫，中途还安排休息。护理完精神状态很好。”</p>
+              <div class="quote-author">
+                <strong>可乐家长</strong>
+                <span>金毛 · 9 岁</span>
+              </div>
+            </article>
+            <article class="quote">
+              <div class="quote-top">
+                <span class="quote-tag">接送到店</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“临时加了接送服务，沟通很顺。到店前后都会确认皮肤情况，护理建议也写得很清楚。”</p>
+              <div class="quote-author">
+                <strong>芝麻家长</strong>
+                <span>英短 · 5 岁</span>
+              </div>
+            </article>
+            <article class="quote" aria-hidden="true">
+              <div class="quote-top">
+                <span class="quote-tag">敏感犬安抚</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“我家狗子以前进洗护店就发抖，这次居然愿意跟美容师贴贴。洗完蓬松到像刚出炉的小面包。”</p>
+              <div class="quote-author">
+                <strong>Lucky 家长</strong>
+                <span>柯基 · 3 岁</span>
+              </div>
+            </article>
+            <article class="quote" aria-hidden="true">
+              <div class="quote-top">
+                <span class="quote-tag">猫咪分区洗护</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“猫咪分区很加分，洗前还会问敏感点，回家没有应激。指甲剪得也很圆滑。”</p>
+              <div class="quote-author">
+                <strong>年糕家长</strong>
+                <span>布偶猫 · 2 岁</span>
+              </div>
+            </article>
+            <article class="quote" aria-hidden="true">
+              <div class="quote-top">
+                <span class="quote-tag">过程透明</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“美容师会边洗边发照片，吹毛时还特意避开耳朵。接回家以后香味很清爽，不会冲鼻。”</p>
+              <div class="quote-author">
+                <strong>豆包家长</strong>
+                <span>柴犬 · 4 岁</span>
+              </div>
+            </article>
+            <article class="quote" aria-hidden="true">
+              <div class="quote-top">
+                <span class="quote-tag">精修造型</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“第一次做造型就剪到了我想要的圆脸效果，细节很干净，脚底毛和肚皮也修得很仔细。”</p>
+              <div class="quote-author">
+                <strong>Momo 家长</strong>
+                <span>比熊 · 1 岁</span>
+              </div>
+            </article>
+            <article class="quote" aria-hidden="true">
+              <div class="quote-top">
+                <span class="quote-tag">老年犬友好</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“老年犬站久了会累，店里给它垫了防滑垫，中途还安排休息。护理完精神状态很好。”</p>
+              <div class="quote-author">
+                <strong>可乐家长</strong>
+                <span>金毛 · 9 岁</span>
+              </div>
+            </article>
+            <article class="quote" aria-hidden="true">
+              <div class="quote-top">
+                <span class="quote-tag">接送到店</span>
+                <span class="stars" aria-label="五星评价">★★★★★</span>
+              </div>
+              <p>“临时加了接送服务，沟通很顺。到店前后都会确认皮肤情况，护理建议也写得很清楚。”</p>
+              <div class="quote-author">
+                <strong>芝麻家长</strong>
+                <span>英短 · 5 岁</span>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section id="contact" class="contact" aria-labelledby="contact-title">
