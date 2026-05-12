@@ -1,4 +1,5 @@
-﻿import styles from './page.module.css';
+﻿import ArrivalTimeField from './ArrivalTimeField';
+import styles from './page.module.css';
 
 const testimonials = [
   {
@@ -378,10 +379,7 @@ export default function Home() {
               联系电话
               <input type="tel" name="phone" placeholder="请输入手机号" autoComplete="tel" />
             </label>
-            <label>
-              期望到店时间
-              <input type="datetime-local" name="arrivalTime" aria-label="期望到店时间" />
-            </label>
+            <ArrivalTimeField />
             <label>
               宠物类型
               <select name="pet">
