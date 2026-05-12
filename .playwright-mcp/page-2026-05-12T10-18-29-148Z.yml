@@ -1,0 +1,329 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - link "返回爪爪泡泡屋首页" [ref=e8] [cursor=pointer]:
+        - /url: "#top"
+        - img [ref=e10]
+        - text: 爪爪泡泡屋
+      - navigation "页面导航" [ref=e15]:
+        - link "服务" [ref=e16] [cursor=pointer]:
+          - /url: "#services"
+        - link "流程" [ref=e17] [cursor=pointer]:
+          - /url: "#process"
+        - link "套餐" [ref=e18] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "联系" [ref=e19] [cursor=pointer]:
+          - /url: "#contact"
+        - link "预约洗护" [ref=e20] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e21]:
+    - region "让毛孩子洗完澡，也像放了个小假。" [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: 一宠一浴巾 · 透明护理 · 温柔吹护
+        - heading "让毛孩子洗完澡，也像放了个小假。" [level=1] [ref=e26]
+        - paragraph [ref=e27]: 爪爪泡泡屋提供猫狗洗澡、基础美容、皮毛护理和到店接送服务。我们用低刺激产品、独立消毒工具和耐心安抚流程，让敏感小朋友也能安心变香。
+        - generic [ref=e28]:
+          - link "立即预约" [ref=e29] [cursor=pointer]:
+            - /url: "#contact"
+          - link "查看服务" [ref=e30] [cursor=pointer]:
+            - /url: "#services"
+        - generic "店铺数据" [ref=e31]:
+          - generic [ref=e32]:
+            - strong [ref=e33]: "4.9"
+            - text: 顾客评分
+          - generic [ref=e34]:
+            - strong [ref=e35]: 30min
+            - text: 护理状态同步
+          - generic [ref=e36]:
+            - strong [ref=e37]: 1:1
+            - text: 专属美容师服务
+      - generic "洗护后的宠物插画" [ref=e38]:
+        - img "一只刚洗完澡的开心小狗" [ref=e42]:
+          - img "刚洗护完成的蓬松小型犬" [ref=e43]
+        - generic [ref=e44]:
+          - img [ref=e46]
+          - generic [ref=e48]:
+            - strong [ref=e49]: 今日可约：15:30 / 17:00
+            - text: 支持小型犬、中大型犬和猫咪分区洗护
+    - region "不是简单冲一冲，是一套舒服的皮毛管理。" [ref=e50]:
+      - generic [ref=e51]:
+        - heading "不是简单冲一冲，是一套舒服的皮毛管理。" [level=2] [ref=e52]
+        - paragraph [ref=e53]: 从基础清洁到造型修剪，每个项目都包含皮肤观察、耳眼清洁和护理建议。
+      - generic [ref=e54]:
+        - article [ref=e55]:
+          - img [ref=e56]
+          - heading "精致洗澡" [level=3] [ref=e58]
+          - paragraph [ref=e59]: 温水冲洗、低敏香波、护毛素、吹干梳理，减少打结和浮毛。
+        - article [ref=e60]:
+          - img [ref=e61]
+          - heading "美容造型" [level=3] [ref=e63]
+          - paragraph [ref=e64]: 圆脸、泰迪装、短毛清爽造型，按宠物性格和毛量定制。
+        - article [ref=e65]:
+          - img [ref=e66]
+          - heading "皮毛护理" [level=3] [ref=e69]
+          - paragraph [ref=e70]: 针对干燥、掉毛、敏感皮肤，提供药浴建议和护理记录。
+        - article [ref=e71]:
+          - img [ref=e72]
+          - heading "接送服务" [level=3] [ref=e74]
+          - paragraph [ref=e75]: 3 公里内可预约接送，到店、洗护、返程节点都会发送提醒。
+    - region "店内环境安静明亮，洗护分区更放心。" [ref=e76]:
+      - generic [ref=e77]:
+        - heading "店内环境安静明亮，洗护分区更放心。" [level=2] [ref=e78]
+        - paragraph [ref=e79]: 接待、洗护、猫咪安静区各自独立，动线清楚，减少宠物等待和陌生气味带来的压力。
+      - generic "店内环境轮播图" [ref=e80]:
+        - generic [ref=e81]:
+          - figure "接待与零售区 暖木、石材和柔和灯光，让到店第一步更像进入安静的护理会所。" [ref=e82]:
+            - img "高端宠物洗护店接待与零售区" [ref=e83]
+            - generic [ref=e84]:
+              - strong [ref=e85]: 接待与零售区
+              - generic [ref=e86]: 暖木、石材和柔和灯光，让到店第一步更像进入安静的护理会所。
+          - figure "洗护与吹干区 独立浴缸、护理台和低噪吹干设备，保持卫生，也照顾敏感宠物的情绪。" [ref=e87]:
+            - img "高端宠物洗护店洗护与吹干区" [ref=e88]
+            - generic [ref=e89]:
+              - strong [ref=e90]: 洗护与吹干区
+              - generic [ref=e91]: 独立浴缸、护理台和低噪吹干设备，保持卫生，也照顾敏感宠物的情绪。
+          - figure "猫咪安静区 玻璃分区、软垫和猫爬架组合，给猫咪留出观察和放松的安全距离。" [ref=e92]:
+            - img "高端宠物洗护店猫咪安静护理区" [ref=e93]
+            - generic [ref=e94]:
+              - strong [ref=e95]: 猫咪安静区
+              - generic [ref=e96]: 玻璃分区、软垫和猫爬架组合，给猫咪留出观察和放松的安全距离。
+    - region "每只毛孩子洗完，都要有蓬松发光的证件照。" [ref=e101]:
+      - generic [ref=e102]:
+        - heading "每只毛孩子洗完，都要有蓬松发光的证件照。" [level=2] [ref=e103]
+        - paragraph [ref=e104]: 补上真实服务感的宠物照片，让访客一眼看到小型犬、猫咪和中大型犬的护理效果。
+      - generic [ref=e105]:
+        - article [ref=e106]:
+          - figure "小型犬精致洗护 圆脸梳理、蓬松吹干和基础清洁一次完成，干净但不紧张。" [ref=e107]:
+            - img "洗护后蓬松干净的小型犬" [ref=e109]
+            - generic [ref=e110]:
+              - heading "小型犬精致洗护" [level=3] [ref=e111]
+              - paragraph [ref=e112]: 圆脸梳理、蓬松吹干和基础清洁一次完成，干净但不紧张。
+        - article [ref=e113]:
+          - figure "猫咪轻柔护理 分区安抚、低刺激清洁和顺毛梳理，照顾怕水小朋友的节奏。" [ref=e114]:
+            - img "护理后安静放松的长毛猫" [ref=e116]
+            - generic [ref=e117]:
+              - heading "猫咪轻柔护理" [level=3] [ref=e118]
+              - paragraph [ref=e119]: 分区安抚、低刺激清洁和顺毛梳理，照顾怕水小朋友的节奏。
+        - article [ref=e120]:
+          - figure "中大型犬全身护理 针对毛量和体型安排洗护时长，吹透底毛，减少潮湿和浮毛。" [ref=e121]:
+            - img "洗护后毛发顺亮的中大型犬" [ref=e123]
+            - generic [ref=e124]:
+              - heading "中大型犬全身护理" [level=3] [ref=e125]
+              - paragraph [ref=e126]: 针对毛量和体型安排洗护时长，吹透底毛，减少潮湿和浮毛。
+    - region "我们把“害怕洗澡”拆成更轻松的小步骤。" [ref=e127]:
+      - generic [ref=e128]:
+        - heading "我们把“害怕洗澡”拆成更轻松的小步骤。" [level=2] [ref=e129]
+        - paragraph [ref=e130]: 洗护前先熟悉环境，洗护中持续安抚，洗护后给出皮毛和耳爪状态反馈。小朋友舒服，家长也更放心。
+        - list [ref=e131]:
+          - listitem [ref=e132]:
+            - img [ref=e133]
+            - generic [ref=e135]: 独立工具包和洗护台消毒
+          - listitem [ref=e136]:
+            - img [ref=e137]
+            - generic [ref=e139]: 猫狗分区，减少陌生气味压力
+          - listitem [ref=e140]:
+            - img [ref=e141]
+            - generic [ref=e143]: 洗后拍照记录，护理建议可追踪
+      - generic [ref=e144]:
+        - article [ref=e145]:
+          - generic [ref=e146]: "01"
+          - generic [ref=e147]:
+            - heading "到店评估" [level=3] [ref=e148]
+            - paragraph [ref=e149]: 确认体型、毛发打结、皮肤状态和是否怕水，避免一上来就“开洗”。
+        - article [ref=e150]:
+          - generic [ref=e151]: "02"
+          - generic [ref=e152]:
+            - heading "温和清洁" [level=3] [ref=e153]
+            - paragraph [ref=e154]: 按宠物皮毛状态选择香波，水温、吹风温度和风量都逐步适应。
+        - article [ref=e155]:
+          - generic [ref=e156]: "03"
+          - generic [ref=e157]:
+            - heading "修剪护理" [level=3] [ref=e158]
+            - paragraph [ref=e159]: 清理脚底毛、指甲、耳眼和肛门腺，可选局部或全身造型。
+        - article [ref=e160]:
+          - generic [ref=e161]: "04"
+          - generic [ref=e162]:
+            - heading "状态反馈" [level=3] [ref=e163]
+            - paragraph [ref=e164]: 交付洗护照片、皮毛建议和下次护理周期，家长不用猜。
+    - region "清楚的套餐，少一点套路，多一点安心。" [ref=e165]:
+      - generic [ref=e166]:
+        - heading "清楚的套餐，少一点套路，多一点安心。" [level=2] [ref=e167]
+        - paragraph [ref=e168]: 价格会根据体型、毛量和打结程度微调，到店评估后先确认再服务。
+      - generic [ref=e169]:
+        - article [ref=e170]:
+          - generic [ref=e171]: 基础清洁
+          - heading "清爽洗护" [level=3] [ref=e172]
+          - generic [ref=e173]: ¥88 起
+          - paragraph [ref=e174]: 适合日常洗澡和轻度浮毛护理。
+          - list [ref=e175]:
+            - listitem [ref=e176]: 温和香波洗澡
+            - listitem [ref=e177]: 吹干梳毛
+            - listitem [ref=e178]: 耳眼基础清洁
+        - article [ref=e179]:
+          - generic [ref=e180]: 推荐套餐
+          - heading "香香全护理" [level=3] [ref=e181]
+          - generic [ref=e182]: ¥168 起
+          - paragraph [ref=e183]: 洗澡、修剪、护理一次搞定，适合大多数家庭。
+          - list [ref=e184]:
+            - listitem [ref=e185]: 基础洗护全部项目
+            - listitem [ref=e186]: 脚底毛和指甲修剪
+            - listitem [ref=e187]: 护毛素和护理建议
+        - article [ref=e188]:
+          - generic [ref=e189]: 造型美容
+          - heading "精修造型" [level=3] [ref=e190]
+          - generic [ref=e191]: ¥268 起
+          - paragraph [ref=e192]: 适合泰迪、比熊、雪纳瑞等需要造型的宠物。
+          - list [ref=e193]:
+            - listitem [ref=e194]: 全身洗护
+            - listitem [ref=e195]: 定制造型修剪
+            - listitem [ref=e196]: 洗后定妆拍照
+    - region "让家长放心的，不只是洗得香。" [ref=e197]:
+      - generic [ref=e198]:
+        - generic [ref=e199]: 真实到店反馈
+        - heading "让家长放心的，不只是洗得香。" [level=2] [ref=e201]
+        - paragraph [ref=e202]: 从胆小敏感到精修造型，每一只小朋友都会被认真记录、温柔照顾。
+      - generic "顾客评价轮播" [ref=e203]:
+        - generic [ref=e204]:
+          - article [ref=e205]:
+            - generic [ref=e206]:
+              - generic [ref=e207]: 敏感犬安抚
+              - generic "五星评价" [ref=e208]: ★★★★★
+            - paragraph [ref=e209]: “我家狗子以前进洗护店就发抖，这次居然愿意跟美容师贴贴。洗完蓬松到像刚出炉的小面包。”
+            - generic [ref=e210]:
+              - strong [ref=e211]: Lucky 家长
+              - generic [ref=e212]: 柯基 · 3 岁
+          - article [ref=e213]:
+            - generic [ref=e214]:
+              - generic [ref=e215]: 猫咪分区洗护
+              - generic "五星评价" [ref=e216]: ★★★★★
+            - paragraph [ref=e217]: “猫咪分区很加分，洗前还会问敏感点，回家没有应激。指甲剪得也很圆滑。”
+            - generic [ref=e218]:
+              - strong [ref=e219]: 年糕家长
+              - generic [ref=e220]: 布偶猫 · 2 岁
+          - article [ref=e221]:
+            - generic [ref=e222]:
+              - generic [ref=e223]: 过程透明
+              - generic "五星评价" [ref=e224]: ★★★★★
+            - paragraph [ref=e225]: “美容师会边洗边发照片，吹毛时还特意避开耳朵。接回家以后香味很清爽，不会冲鼻。”
+            - generic [ref=e226]:
+              - strong [ref=e227]: 豆包家长
+              - generic [ref=e228]: 柴犬 · 4 岁
+          - article [ref=e229]:
+            - generic [ref=e230]:
+              - generic [ref=e231]: 精修造型
+              - generic "五星评价" [ref=e232]: ★★★★★
+            - paragraph [ref=e233]: “第一次做造型就剪到了我想要的圆脸效果，细节很干净，脚底毛和肚皮也修得很仔细。”
+            - generic [ref=e234]:
+              - strong [ref=e235]: Momo 家长
+              - generic [ref=e236]: 比熊 · 1 岁
+          - article [ref=e237]:
+            - generic [ref=e238]:
+              - generic [ref=e239]: 老年犬友好
+              - generic "五星评价" [ref=e240]: ★★★★★
+            - paragraph [ref=e241]: “老年犬站久了会累，店里给它垫了防滑垫，中途还安排休息。护理完精神状态很好。”
+            - generic [ref=e242]:
+              - strong [ref=e243]: 可乐家长
+              - generic [ref=e244]: 金毛 · 9 岁
+          - article [ref=e245]:
+            - generic [ref=e246]:
+              - generic [ref=e247]: 接送到店
+              - generic "五星评价" [ref=e248]: ★★★★★
+            - paragraph [ref=e249]: “临时加了接送服务，沟通很顺。到店前后都会确认皮肤情况，护理建议也写得很清楚。”
+            - generic [ref=e250]:
+              - strong [ref=e251]: 芝麻家长
+              - generic [ref=e252]: 英短 · 5 岁
+          - article [ref=e253]:
+            - generic [ref=e254]:
+              - generic [ref=e255]: 敏感犬安抚
+              - generic [ref=e256]: ★★★★★
+            - paragraph [ref=e257]: “我家狗子以前进洗护店就发抖，这次居然愿意跟美容师贴贴。洗完蓬松到像刚出炉的小面包。”
+            - generic [ref=e258]:
+              - strong [ref=e259]: Lucky 家长
+              - generic [ref=e260]: 柯基 · 3 岁
+          - article [ref=e261]:
+            - generic [ref=e262]:
+              - generic [ref=e263]: 猫咪分区洗护
+              - generic [ref=e264]: ★★★★★
+            - paragraph [ref=e265]: “猫咪分区很加分，洗前还会问敏感点，回家没有应激。指甲剪得也很圆滑。”
+            - generic [ref=e266]:
+              - strong [ref=e267]: 年糕家长
+              - generic [ref=e268]: 布偶猫 · 2 岁
+          - article [ref=e269]:
+            - generic [ref=e270]:
+              - generic [ref=e271]: 过程透明
+              - generic [ref=e272]: ★★★★★
+            - paragraph [ref=e273]: “美容师会边洗边发照片，吹毛时还特意避开耳朵。接回家以后香味很清爽，不会冲鼻。”
+            - generic [ref=e274]:
+              - strong [ref=e275]: 豆包家长
+              - generic [ref=e276]: 柴犬 · 4 岁
+          - article [ref=e277]:
+            - generic [ref=e278]:
+              - generic [ref=e279]: 精修造型
+              - generic [ref=e280]: ★★★★★
+            - paragraph [ref=e281]: “第一次做造型就剪到了我想要的圆脸效果，细节很干净，脚底毛和肚皮也修得很仔细。”
+            - generic [ref=e282]:
+              - strong [ref=e283]: Momo 家长
+              - generic [ref=e284]: 比熊 · 1 岁
+          - article [ref=e285]:
+            - generic [ref=e286]:
+              - generic [ref=e287]: 老年犬友好
+              - generic [ref=e288]: ★★★★★
+            - paragraph [ref=e289]: “老年犬站久了会累，店里给它垫了防滑垫，中途还安排休息。护理完精神状态很好。”
+            - generic [ref=e290]:
+              - strong [ref=e291]: 可乐家长
+              - generic [ref=e292]: 金毛 · 9 岁
+          - article [ref=e293]:
+            - generic [ref=e294]:
+              - generic [ref=e295]: 接送到店
+              - generic [ref=e296]: ★★★★★
+            - paragraph [ref=e297]: “临时加了接送服务，沟通很顺。到店前后都会确认皮肤情况，护理建议也写得很清楚。”
+            - generic [ref=e298]:
+              - strong [ref=e299]: 芝麻家长
+              - generic [ref=e300]: 英短 · 5 岁
+    - region "预约一次，让小家伙香香软软回家。" [ref=e301]:
+      - generic [ref=e302]:
+        - heading "预约一次，让小家伙香香软软回家。" [level=2] [ref=e303]
+        - paragraph [ref=e304]: 填写信息后，我们会在营业时间内联系你确认宠物情况和可预约时段。
+        - generic [ref=e305]:
+          - generic [ref=e306]:
+            - img [ref=e307]
+            - generic [ref=e309]: 营业时间：周一至周日 10:00 - 20:00
+          - generic [ref=e310]:
+            - img [ref=e311]
+            - generic [ref=e314]: 地址：阳光街 88 号宠物友好社区 1F
+          - generic [ref=e315]:
+            - img [ref=e316]
+            - generic [ref=e318]: 电话：188-0000-6688
+        - generic "爪爪泡泡屋门店地图示意" [ref=e319]:
+          - img "阳光街 88 号宠物友好社区 1F 附近地图示意" [ref=e320]:
+            - generic [ref=e324]: 宠物友好社区
+            - generic [ref=e325]: 阳光街
+            - generic [ref=e327]: 爪爪泡泡屋
+          - generic [ref=e328]:
+            - strong [ref=e329]: 门店位置
+            - generic [ref=e330]: 阳光街 88 号宠物友好社区 1F，导航搜索“爪爪泡泡屋”。
+      - generic [ref=e332]:
+        - generic [ref=e333]:
+          - text: 你的称呼
+          - textbox "你的称呼" [ref=e334]:
+            - /placeholder: 例如：小王
+        - generic [ref=e335]:
+          - text: 联系电话
+          - textbox "联系电话" [ref=e336]:
+            - /placeholder: 请输入手机号
+        - generic [ref=e337]:
+          - text: 期望到店时间
+          - textbox "期望到店时间" [ref=e338]
+        - generic [ref=e339]:
+          - text: 宠物类型
+          - combobox "宠物类型" [ref=e340]:
+            - option "小型犬" [selected]
+            - option "中大型犬"
+            - option "猫咪"
+            - option "其他小宠"
+        - generic [ref=e341]:
+          - text: 想预约的服务
+          - textbox "想预约的服务" [ref=e342]:
+            - /placeholder: 例如：比熊全身洗护和圆脸造型，周六下午比较方便。
+        - button "提交预约信息" [ref=e343] [cursor=pointer]
+  - contentinfo [ref=e344]: © 2026 爪爪泡泡屋 Paw Spa. 为每一只毛孩子认真洗香香。
