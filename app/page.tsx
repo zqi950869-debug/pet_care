@@ -298,6 +298,22 @@ export default function Home() {
               <span>电话：188-0000-6688</span>
             </div>
           </div>
+          <div className="store-map" aria-label="爪爪泡泡屋门店地图示意">
+            <div className="map-canvas" role="img" aria-label="阳光街 88 号宠物友好社区 1F 附近地图示意">
+              <span className="road main-road"></span>
+              <span className="road side-road"></span>
+              <span className="road park-road"></span>
+              <span className="map-block park">宠物友好社区</span>
+              <span className="map-block plaza">阳光街</span>
+              <span className="map-pin">
+                <span>爪爪泡泡屋</span>
+              </span>
+            </div>
+            <div className="map-note">
+              <strong>门店位置</strong>
+              <span>阳光街 88 号宠物友好社区 1F，导航搜索“爪爪泡泡屋”。</span>
+            </div>
+          </div>
         </div>
         <div className="form-card">
           <form>
