@@ -310,6 +310,10 @@ export default function Home() {
               <input type="tel" name="phone" placeholder="请输入手机号" autoComplete="tel" />
             </label>
             <label>
+              期望到店时间
+              <input type="datetime-local" name="arrivalTime" aria-label="期望到店时间" />
+            </label>
+            <label>
               宠物类型
               <select name="pet">
                 <option>小型犬</option>
